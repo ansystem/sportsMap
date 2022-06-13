@@ -78,14 +78,16 @@
 		</form>
     <h2>サークルを登録してメンバーを募集する</h2>
         <button onclick="location.href='CircleRegistration'">サークルを登録する</button>
+    <!-- ★一旦コメントアウト
     <h2>記事</h2>
     	<ul>
 	        <li><a href="">1.「入ったらアムウェイサークルだった...」の回避策3選</a></li>
 	        <li><a href="">2.社会人サークルに入ってよかったことTop5</a></li>
 	        <li><a href="">3.「社会人サークルで恋人をつくりたい」と思っている方へ</a></li>
 		</ul>
+	-->
         <!-- ★共通化する -->
-        
+     
     <h2>お問い合わせ</h2>
 	    <form action="" method="post">
 		    <dl>
