@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* ==共通================================================================================================================================================== */
+html,body {
+    line-height: 1.2rem;
+	margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+
+h2 {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    background: #1c0568;
+    color: white;
+} h2::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 20px rgb(103, 130, 160);
+}
+
+h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0.3rem 0.2rem 0.2rem 0.2rem;/*文字の上下左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+
+ /* 画像 */
+ figure {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+
+ ul {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+ dl {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+ 
+ p {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+ 
+ form {
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+
+/* テキストボックス、テキストエリア、パスワード、メールアドレス */
+input[type="text"],input[type="password"],input[type="email"],textarea {
+    padding: 2px;
+    width: 100%; 
+    border-radius: 3px; 
+    border: 2px solid #ddd; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+} input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus,textarea:focus {
+    box-shadow: 0 0 5px 0 rgba(255,153,0,1);
+    border: 2px solid #FFF !important;
+    outline: 0;
+    margin-bottom: 10px;
+}
+/* プルダウン */
+select {
+    appearance:auto;
+    border-radius: 3px; 
+    border: 2px solid #ddd; 
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+} select:focus {
+    box-shadow: 0 0 5px 0 rgba(255,153,0,1);
+    border: 2px solid #FFF !important;
+    outline: 0;
+    margin-bottom: 10px;
+}
+
+
+
+button,input[type="submit"],input[type="button"] {
+    background: #eee;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    box-shadow: 2px 2px 0 #6bb6ff;
+    border-radius: 10px;
+}
+button:hover,input[type="submit"]:hover,input[type="button"]:hover {
+  background-color: #b3d9ff;
+  box-shadow: 0 0 0;
+  transform: translate(5px, 5px);
+}
+button:after,input[type="submit"]:after,input[type="button"]:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    padding-left: 5px;
+}
+
+
+a {
+    display: inline-block;
+    font-weight:bold;
+    transition:.5s;
+    text-decoration: underline;
+    color: #3a13bc;
+} a:hover{
+    color:#3a13bc86;/*文字色*/
+    transition:.5s;
+    transform: rotateX(360deg);
+}
+
+section {
+    padding: 0.5em 1em;
+    margin: 10px;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+ul, ol {
+    color: #1e366a;
+    border-bottom: solid #1e366a 1px;/*下のボーダー*/
+    padding: 0.3em 0 0.3    em 0.5em;
+}ul li, ol li {
+    line-height: 1.2;
+    padding: 0.1em 0;
+}
+
+
+dl dt {
+    border-bottom: solid 3px #cce4ff;
+    position: relative;
+    padding-bottom: 3px;
+} dl dt:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #5472cd;
+    bottom: -3px;
+    width: 10%;
+}
+
+dd {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+
+/* ==クラス================================================================================================================================================== */
+
+.required ,.errorMsg,.warning{
+    color: red;
+}
